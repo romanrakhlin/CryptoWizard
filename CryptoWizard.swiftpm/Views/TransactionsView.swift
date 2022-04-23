@@ -21,7 +21,7 @@ struct TransactionsView: View {
             Color(hex: "E9E8FF")
                
             if currentScreen < transactionsScreens.count {
-                if transactionsScreens[currentScreen] == nil && currentScreen == 2 {
+                if transactionsScreens[currentScreen] == nil && currentScreen == 1 {
                     ChooseItemView(currentScreen: $currentScreen, ableToSkipNext: $ableToSkipNext)
                 } else {
                     VStack {
@@ -47,7 +47,7 @@ struct TransactionsView: View {
             }
         }
         .onTapGesture {
-            if ableToSkipNext && currentScreen != 2 {
+            if ableToSkipNext && currentScreen != 1 {
                 currentScreen += 1
                 ableToSkipNext = false
                 

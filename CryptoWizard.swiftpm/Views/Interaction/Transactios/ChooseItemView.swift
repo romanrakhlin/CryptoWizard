@@ -25,7 +25,7 @@ struct ChooseItemView: View {
                 
                 Spacer()
                 
-                VStack {
+                VStack(spacing: 40) {
                     VStack {
                         ForEach(itemsMatrix, id: \.self) { items in
                             HStack {
@@ -44,6 +44,11 @@ struct ChooseItemView: View {
                             }
                         }
                     }
+
+                    Text("Everything here costs 2 BTC")
+                        .font(.system(size: 32, weight: .medium, design: .rounded))
+                        .multilineTextAlignment(.center)
+                        .opacity(0.5)
                 }
                     
                 Spacer()

@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-// Model
-struct ScreenView {
-    let text: String
-    let image: String
-}
-
 // Introduction
 let introduction_one = ScreenView(text: "Hello there! My namy is NFTdalf and I’am a Crypto Wizard!", image: "wizard")
 let introduction_two = ScreenView(text: "Cryptocurrecies are really popular right now. This is truly the future! And I want to help you figure out exactly how it works.", image: "wizard")
@@ -92,12 +86,12 @@ let recap_four = ScreenView(text: "Miner picked up our transaction in that mempo
 let recap_five = ScreenView(text: "The network generated a “Target” and we generating “Nonce” over and over again to create a hash smaller than a “Target”", image: "target_math")
 let recap_six = ScreenView(text: "Miner generated found the right hash and added the new block with out transaction inside to the blockchain", image: "new_block")
 let recap_seven = ScreenView(text: "This version of the blockhain is transfered to every node in the whole network!", image: "spread")
-let recap_eight = ScreenView(text: "This means that our transaction has been excecuted and the seller recieved his funds!", image: "wizard")
+let recap_eight = ScreenView(text: "This means that our transaction has been executed and the seller received his funds!", image: "wizard")
 
 // Data Arrays
 let introductionScreens = [introduction_one, introduction_two, introduction_three, introduction_four]
 let walletScreens = [wallet_one, nil, wallet_two, wallet_three, nil, wallet_four, wallet_five, nil, wallet_six]
-let transactionsScreens = [transactions_one, transactions_two, nil, transactions_three, transactions_four, transactions_five, transactions_six, transactions_seven, transactions_eight, transactions_nine]
+let transactionsScreens = [transactions_one, nil, transactions_two, transactions_three, transactions_four, transactions_five, transactions_six, transactions_seven, transactions_eight, transactions_nine]
 let networkScreens = [network_one, network_two, network_three, network_four, network_five]
 let minersScreens = [miners_one, miners_two, miners_three, miners_four, miners_five, miners_six, miners_seven, miners_eight, miners_nine, miners_ten, miners_eleven]
 let blockchainScreens = [blockchain_one, blockchain_two, blockchain_three, blockchain_four, blockchain_five, blockchain_six, blockchain_seven, blockchain_eight, blockchain_nine, blockchain_ten]

@@ -7,15 +7,6 @@
 
 import Foundation
 
-public extension Data {
-    
-    func sha256() -> Data {
-        let bytes: [UInt8] = Array(self)
-        let result = SHA256(bytes).calculate32()
-        return Data(bytes: result)
-    }
-}
-
 final public class SHA256 {
     
     let message: [UInt8]
@@ -181,7 +172,7 @@ internal func bitPadding(to data: [UInt8], blockSize: Int, allowance: Int = 0) -
         msgLength += 1
     }
     
-    tmp += Array<UInt8>(repeating: 0, count: counter)
+    tmp += [UInt8](repeating: 0, count: counter)
     return tmp
 }
 
@@ -201,32 +192,5 @@ internal struct BytesSequence<D: RandomAccessCollection>: Sequence where D.Itera
             }
             return nil
         }
-    }
-}
-
-extension Data {
-    
-    /// Fast convert to hex by reserving memory (instead of mapping and join).
-    public func toHex() -> String {
-        // Constants (Hex has 2 characters for each Byte).
-        let size = self.count * 2;
-        let degitToCharMap = Array(("0123456789ABCDEF").utf16);
-        // Reserve dynamic memory (plus one for null termination).
-        let buffer = UnsafeMutablePointer<unichar>.allocate(capacity: size + 1);
-        
-        // Convert each byte.
-        var index = 0
-        for byte in self {
-            buffer[index] = degitToCharMap[Int(byte / 16)];
-            index += 1;
-            buffer[index] = degitToCharMap[Int(byte % 16)];
-            index += 1;
-        }
-        
-        // Set Null termination.
-        buffer[index] = 0;
-        // Casts to string (without any copying).
-        return String(utf16CodeUnitsNoCopy: buffer,
-                      count: size, freeWhenDone: true)
     }
 }
