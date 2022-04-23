@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  InfoPopup.swift
+//  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/20/22.
 //

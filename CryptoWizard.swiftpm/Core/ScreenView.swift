@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  ScreenView.swift
+//  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/23/22.
 //

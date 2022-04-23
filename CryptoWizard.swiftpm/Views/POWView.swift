@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  POWView.swift
+//  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/15/22.
 //

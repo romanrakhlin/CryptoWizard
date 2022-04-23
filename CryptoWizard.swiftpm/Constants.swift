@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Constants.swift
 //  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/12/22.

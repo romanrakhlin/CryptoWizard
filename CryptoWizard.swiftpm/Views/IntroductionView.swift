@@ -1,3 +1,10 @@
+//
+//  IntroductionView.swift
+//  CryptoWizard
+//
+//  Created by Roman Rakhlin on 4/12/22.
+//
+
 import SwiftUI
 
 struct IntroductionView: View {

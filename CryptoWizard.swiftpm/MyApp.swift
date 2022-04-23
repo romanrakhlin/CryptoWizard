@@ -5,7 +5,6 @@ struct MyApp: App {
     
     @State var currentChapter: Int = 1
     @State var wallet = Wallet()
-    @State var choosenItem: String = ""
     
     var body: some Scene {
         WindowGroup {

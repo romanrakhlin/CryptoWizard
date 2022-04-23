@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  ContinueText.swift
+//  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/19/22.
 //

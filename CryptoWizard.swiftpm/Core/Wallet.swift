@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  Wallet.swift
+//  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/11/22.
 //

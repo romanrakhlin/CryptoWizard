@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  PrivateKeyExplanationView.swift
+//  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/13/22.
 //

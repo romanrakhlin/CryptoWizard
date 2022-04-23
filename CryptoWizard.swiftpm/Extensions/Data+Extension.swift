@@ -1,11 +1,19 @@
 //
-//  File.swift
+//  Data+Extension.swift
 //  
 //
 //  Created by Roman Rakhlin on 4/23/22.
 //
 
 import Foundation
+
+public extension Data {
+    func sha256() -> Data {
+        let bytes: Array<UInt8> = Array(self)
+        let result = SHA256(bytes).calculate32()
+        return Data(bytes: result)
+    }
+}
 
 extension Data {
     
@@ -31,14 +39,5 @@ extension Data {
         // Casts to string (without any copying).
         return String(utf16CodeUnitsNoCopy: buffer,
                       count: size, freeWhenDone: true)
-    }
-}
-
-public extension Data {
-    
-    func sha256() -> Data {
-        let bytes: [UInt8] = Array(self)
-        let result = SHA256(bytes).calculate32()
-        return Data(bytes: result)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ThankYouView.swift
 //  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/18/22.

@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  WalletView.swift
 //  CryptoWizard
 //
 //  Created by Roman Rakhlin on 4/10/22.
